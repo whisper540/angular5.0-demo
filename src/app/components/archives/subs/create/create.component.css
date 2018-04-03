@@ -1,0 +1,92 @@
+.container-fluid{
+    background-color:#eee;
+    padding: 1.875rem;
+}
+.sd-badge-circle{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    text-align:center;
+    line-height: 20px;
+    border:1px solid #ccc;
+    border-radius:50%;
+    background-color:#ccc;
+    color:#fff;
+    margin-right:10px;
+}
+.sd-plan-font{
+    color:#999;
+}
+.sd-badge-active{
+    color:#000!important;
+}
+.sd-badge-active span{
+    background-color:#000;
+}
+.sd-line{
+    display: inline-block;
+    height:0;
+    width:10rem;
+    padding-bottom:12px;
+    border-bottom:1px solid #ddd;
+    margin:0 2.5rem;
+}
+.sd-pannel{
+    border:1px solid #eee;
+    border-radius:5px;
+    background-color:#fff;
+    padding:1.875rem;
+    max-height: 440.625rem;
+    overflow:auto;
+}
+.sd-input-group{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.sd-border-right{
+    border-right:1px solid #eee;
+}
+.sd-border-bottom{
+    border-bottom:1px solid #eee;
+}
+.sd-a-inline-block a{
+    display:inline-block;
+    height:1.875rem;
+    line-height: 1.875rem;
+    font-size:1rem;
+    color:#333;
+    border:1px solid #ddd;
+    text-decoration:none;
+    cursor:pointer;
+    border-radius:2px;
+    margin-bottom:5px;
+    padding-left:10px;
+}
+.sd-pannel-400{
+    max-height: 25rem;
+}
+.sd-div-margin-top{
+    margin-top:30px;
+}
+.sd-label-explain{
+    font-size:12px;
+    color:#999;
+}
+.sd-span-explain{
+    font-size:14px;
+    color:#333;
+}
+.sd-dl-font-14{
+    font-size:14px;
+    color:#333;
+}
+.sd-dl-font-14 dd{
+    margin-left:1.875rem;
+}

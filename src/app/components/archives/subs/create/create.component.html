@@ -1,0 +1,148 @@
+<div class="container-fluid">
+    <div class="d-flex flex-row align-items-start">
+        <a href="javascript:void(0);" class="sd-plan-font" [class.sd-badge-active]="planNum == 1"><span class="sd-badge-circle">1</span>基本资料</a>
+        <span class="sd-line"></span>
+        <a href="javascript:void(0);" class="sd-plan-font" [class.sd-badge-active]="planNum == 2"><span class="sd-badge-circle">2</span>病证诊断</a>
+        <span class="sd-line"></span>
+        <a href="javascript:void(0);" class="sd-plan-font" [class.sd-badge-active]="planNum == 3"><span class="sd-badge-circle">3</span>训练方案</a>
+    </div>
+    <div *ngIf="planNum == 1" class="sd-pannel">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="inputEmail4">姓名</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="username">
+            </div>
+            <div class="form-group col-6">
+                <div>
+                    <label>性别</label>
+                </div>
+                <div class="sd-input-group">
+                    <input class="" type="radio" name="sex" id="sex1" value="option1">
+                    <label class="" for="sex1">男</label>
+                    <input class="" type="radio" name="sex" id="sex2" value="option2">
+                    <label class="" for="sex2">女</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="phone">手机号</label>
+                <input type="email" class="form-control" id="phone" placeholder="phone">
+            </div>
+            <div class="form-group col-6">
+                <label for="birthday">出生日期</label>
+                <input type="text" class="form-control" id="birthday" placeholder="birthday">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="degree">教育程度</label>
+                <select class="form-control" id="degree">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group col-6">
+                <label for="handedness">利手</label>
+                <select class="form-control" id="handedness">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row d-flex justify-content-between">
+            <button class="bg-dark btn text-white" (click)="goBack()">返回</button>
+            <button class="bg-dark btn text-white" (click)="goPlan(2)">下一步</button>
+        </div>
+    </div>
+    <div *ngIf="planNum == 2" class="sd-pannel">
+        <div class="d-flex flex-row row sd-border-bottom sd-pannel-400">
+            <div class="col-4 sd-border-right">
+                <ul class="sd-list-group">
+                    <li class="sd-list-group-item">Cras justo odio</li>
+                    <li class="sd-list-group-item">Dapibus ac facilisis in</li>
+                    <li class="sd-list-group-item">Morbi leo risus</li>
+                    <li class="sd-list-group-item">Porta ac consectetur ac</li>
+                    <li class="sd-list-group-item">Vestibulum at eros</li>
+                  </ul>
+            </div>
+            <div class="col-8">
+                <dl class="sd-dl-font-14">
+                    <dt>
+                        <input type="checkbox" name="" id="isdown">
+                        <label for="isdown">主观性认知功能下降（SCD）</label>
+                    </dt>
+                    <dd>
+                        <input class="" type="radio" name="isdown" id="down1" value="option1">
+                        <label class="" for="down1">遗忘型</label>
+                        <input class="" type="radio" name="isdown" id="down2" value="option2">
+                        <label class="" for="down2">非遗忘型</label>
+                    </dd>
+                    <dt>
+                        <input type="checkbox" name="" id="isknow">
+                        <label for="isknow">轻度认知障碍（MCI）</label>
+                    </dt>
+                    <dd>
+                        <input class="" type="radio" name="degree" id="degree1" value="option1">
+                        <label class="" for="degree1">轻度</label>
+                        <input class="" type="radio" name="degree" id="degree2" value="option2">
+                        <label class="" for="degree2">中度</label>
+                        <input class="" type="radio" name="degree" id="degree3" value="option2">
+                        <label class="" for="degree3">重度</label>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div>
+            <div class="sd-label-title">
+                <label class="sd-label-explain">已选病症：</label>
+            </div>
+            <div class="sd-a-inline-block">
+                <a href="javascript:void(0);">主观性认知功能下降（SCD）
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+                <a href="javascript:void(0);">主观性认知功能下降（SCD）
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+                <a href="javascript:void(0);">主观性认知功能下降（SCD）
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+                <a href="javascript:void(0);">主观性认知功能下降（SCD）
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+                <a href="javascript:void(0);">主观性认知功能下降（SCD）
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="form-row d-flex justify-content-between sd-div-margin-top">
+                <div>
+                    <button class="bg-dark btn text-white" (click)="goPlan(1)">上一步</button>
+                    <span class="sd-span-explain">测评后再进行病症诊断，点击进入现场测评</span>
+                </div>
+                <div>
+                    <span class="sd-span-explain">暂不填写病症诊断，跳过此步骤</span>
+                    <button class="bg-dark btn text-white" (click)="goPlan(3)">下一步</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="planNum == 3" class="sd-pannel">3</div>
+</div>
